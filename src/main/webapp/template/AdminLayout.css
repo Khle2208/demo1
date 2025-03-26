@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+body {
+	background-color: #f5f5f5;
+}
+
+/* Thêm các media queries để điều chỉnh giao diện */
+@media ( max-width : 768px) {
+	.content {
+		padding: 10px;
+	}
+	.table-responsive {
+		overflow-x: auto;
+	}
+	.modal-dialog {
+		margin: 10px;
+	}
+	.book-info {
+		margin-top: 20px;
+	}
+}
+
+@media ( max-width : 576px) {
+	.btn {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.col-md-6 {
+		width: 100%;
+	}
+	.modal-dialog {
+		margin: 5px;
+	}
+}
+
+.sidebar {
+	width: 250px;
+	background: #c9a14b;
+	color: white;
+	height: 100vh;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.sidebar a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+}
+
+.sidebar a:hover {
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+}
+
+.content {
+	margin-left: 250px;
+	padding: 20px;
+}
+
+.topbar {
+	background: #e7c998;
+	padding: 10px 20px;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.table img {
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+}
+
+.icon-action {
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.sidebar-row {
+	width: 100%;
+	font-size: 22px;
+}
+
+.sidebar-row-title {
+	width: 100%;
+	text-align: center;
+}
+
+.sidebar img {
+	max-width: 100%;
+	height: auto;
+}
+
+.modal-content {
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.modal-header {
+	border-bottom: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.modal-header h5 {
+	font-weight: bold;
+}
+
+.modal-body {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.book-image {
+	width: 300px;
+	height: 350px;
+	border: 2px solid #1d3c6a;
+	padding: 10px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.book-image img {
+	max-width: 100%;
+	height: auto;
+}
+
+.book-info {
+	flex: 1;
+}
+
+.rating {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.rating i {
+	color: gold;
+}
+
+.close-btn {
+	background: none;
+	border: none;
+	font-size: 20px;
+}
+
+.close-btn i {
+	color: #cc9600;
+}
+
+/* dropdown notification */
+.dropdown-menu {
+	width: 320px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+	padding: 0;
+}
+
+.dropdown-header {
+	background-color: #cc9600;
+	color: white;
+	padding: 10px 15px;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.dropdown-header .close-btn {
+	background: none;
+	border: none;
+	font-size: 16px;
+	color: white;
+	cursor: pointer;
+}
+
+.notification-item {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+}
+
+.notification-item:last-child {
+	border-bottom: none;
+}
+
+.avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.notification-text {
+	flex-grow: 1;
+}
+
+.notification-text p {
+	margin: 0;
+	font-size: 14px;
+	color: #333;
+}
+
+.notification-text span {
+	font-size: 12px;
+	color: gray;
+}
+
+.status-container {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.status-dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+
+.red {
+	background-color: red;
+}
+
+.green {
+	background-color: green;
+}
+
+.arrow {
+	font-size: 14px;
+	color: #666;
+	cursor: pointer;
+}

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+body{
+	background: gray;
+    overflow-y: scroll;
+}
+
+.container{
+    min-height: max-content;
+}
+
+.slogan{
+    background: linear-gradient(to bottom, #faeb86 0%,  #ff9633 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.cart_item {
+    max-width: 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border-radius: 15px;
+  }
+  
+.cart_item:hover {
+    transform: translateY(-10px);
+  }
